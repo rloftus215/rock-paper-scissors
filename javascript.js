@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
     let number = Math.random();
     if (number >= 0 && number <= 0.33) {
@@ -22,4 +25,5 @@ function getComputerChoice() {
     };
  };
  
- 
+getComputerChoice();
+getHumanChoice();
