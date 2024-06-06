@@ -31,8 +31,8 @@ function getHumanChoice() {
     };
 };
 
-
-function playRound(humanChoice, computerChoice) {
+function playGame() {
+    function playRound(humanChoice, computerChoice) {
     if (humanChoice === 'rock' && computerChoice === 'rock') {
         console.log('computer choice: ' + computerChoice);
         console.log('your choice: ' + humanChoice);
@@ -80,9 +80,30 @@ function playRound(humanChoice, computerChoice) {
      }
 };
 
-
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
+console.log(playRound(humanSelection, computerSelection))
+console.log('computers score = ' + computerScore + ' |' + ' Your score = ' + humanScore);
 
-console.log(playRound(humanSelection, computerSelection));
+};
+
+for (let i = 0; i < 5; i++) {
+    playGame();
+
+    
+}
+
+if (humanScore > computerScore) {
+        console.log('You won!');
+    } else if (computerScore > humanScore) {
+        console.log('You lost!');
+    } else {
+        console.log(`It's a draw!`)
+    }
+
+// console.log(playRound(humanSelection, computerSelection)),
+// console.log(playRound(humanSelection, computerSelection)),
+// console.log(playRound(humanSelection, computerSelection)),
+// console.log(playRound(humanSelection, computerSelection)))
+
