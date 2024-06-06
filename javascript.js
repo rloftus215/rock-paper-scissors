@@ -102,8 +102,4 @@ if (humanScore > computerScore) {
         console.log(`It's a draw!`)
     }
 
-// console.log(playRound(humanSelection, computerSelection)),
-// console.log(playRound(humanSelection, computerSelection)),
-// console.log(playRound(humanSelection, computerSelection)),
-// console.log(playRound(humanSelection, computerSelection)))
 
