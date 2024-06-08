@@ -1,1 +1,1 @@
-# rock-paper-scissors - this game is played in the console. 
+# rock-paper-scissors
